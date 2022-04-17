@@ -1,8 +1,22 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Show All";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="d-flex justify-content-center align-items-center flex-column">
+    <h1>Welcome to CRUDelicious</h1>
+    <a href="/dishes/new">Add Dish</a>
+    <table class="table">
+        <tr>
+            <th>Dish</th>
+            <th>Chef</th>
+        </tr>
+        @* @foreach (Dish d in ViewBag.AllDishes)
+        {
+            <tr>
+                <td>d.Name</td>
+                <td>d.Chef</td>
+            </tr>
+        } *@
+    </table>
+
 </div>
