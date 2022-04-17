@@ -24,6 +24,7 @@ namespace assignment_crudelicious_03.Controllers
 
     public IActionResult Index()
     {
+      ViewBag.AllDishes = _context.Dishes.ToList();
       return View();
     }
 
