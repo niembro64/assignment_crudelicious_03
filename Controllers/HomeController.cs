@@ -59,7 +59,15 @@ namespace assignment_crudelicious_03.Controllers
       return View("ShowDish");
     }
 
-
+    [HttpGet("dishes/remove/{dishId}")]
+    public IActionResult RemoveDish(int dishId)
+    {
+      Console.WriteLine("DELETING DISHHHHH");
+      Dish DishToRemove = _context.Dishes.SingleOrDefault(s => s.DishId == dishId);
+      _context.Dishes.Remove(DishToRemove);
+      _context.SaveChanges();
+      return RedirectToAction("Index");
+    }
 
 
     public IActionResult Privacy()

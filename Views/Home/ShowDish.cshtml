@@ -9,32 +9,38 @@
   <h1>@ViewBag.OneDish.Name</h1>
   <table class="table table-hover">
     <tr>
-     <td>Chef</td>
-     <td>@ViewBag.OneDish.Chef</td>
-    </tr>    
+      <td>Chef</td>
+      <td>@ViewBag.OneDish.Chef</td>
+    </tr>
     <tr>
-     <td>Tastiness</td>
-     <td>@ViewBag.OneDish.Tastiness</td>
-    </tr>    
+      <td>Tastiness</td>
+      <td>@ViewBag.OneDish.Tastiness</td>
+    </tr>
     <tr>
-     <td>Calories</td>
-     <td>@ViewBag.OneDish.Calories</td>
-    </tr>    
+      <td>Calories</td>
+      <td>@ViewBag.OneDish.Calories</td>
+    </tr>
     <tr>
-     <td>Description</td>
-     <td>@ViewBag.OneDish.Description</td>
-    </tr>    
+      <td>Description</td>
+      <td>@ViewBag.OneDish.Description</td>
+    </tr>
     <tr>
-     <td>CreatedAt</td>
-     <td>@ViewBag.OneDish.CreatedAt</td>
-    </tr>    
+      <td>CreatedAt</td>
+      <td>@ViewBag.OneDish.CreatedAt</td>
+    </tr>
     <tr>
-     <td>UpdatedAt</td>
-     <td>@ViewBag.OneDish.UpdatedAt</td>
-    </tr>    
+      <td>UpdatedAt</td>
+      <td>@ViewBag.OneDish.UpdatedAt</td>
+    </tr>
     <tr>
-     <td>DishId</td>
-     <td>@ViewBag.OneDish.DishId</td>
-    </tr>    
+      <td>DishId</td>
+      <td>@ViewBag.OneDish.DishId</td>
+    </tr>
   </table>
+
+  <div class="d-flex flex-row">
+    <a class="btn btn-success mx-3" href="/dishes/edit/@ViewBag.OneDish.DishId">Edit</a>
+    <a class="btn btn-danger mx-3" href="/dishes/remove/@ViewBag.OneDish.DishId">Delete</a>
+
+  </div>
 </div>
