@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Edit Dish";
+}
+@model Dish
+
+<div class="d-flex justify-content-center align-items-center flex-column">
+  <form class="d-flex flex-column align-items-center" action="/dishes/update/@ViewBag.OneDish.DishId" method="post">
+    <h1>Edit @ViewBag.OneDish.Name</h1>
+
+    <label for="Name">Name</label>
+    <input asp-for="Name">
+    <span asp-validation-for="Name"></span>
+
+    <label for="Chef">Chef</label>
+    <input asp-for="Chef">
+    <span asp-validation-for="Chef"></span>
+
+    <label for="Tastiness">Tastiness</label>
+    <input asp-for="Tastiness">
+    <span asp-validation-for="Tastiness"></span>
+
+    <label for="Calories">Calories</label>
+    <input asp-for="Calories">
+    <span asp-validation-for="Calories"></span>
+
+    <label for="Description">Description</label>
+    <input asp-for="Description">
+    <span asp-validation-for="Description"></span>
+
+    <input type="submit" value="Update" class="btn btn-success my-3">
+  </form>
+</div>

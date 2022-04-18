@@ -70,6 +70,41 @@ namespace assignment_crudelicious_03.Controllers
     }
 
 
+
+
+    [HttpGet("dishes/edit/{dishId}")]
+    public IActionResult EditDish(int dishId)
+    {
+      Console.WriteLine("EDITTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
+      Dish DishToUpdate = _context.Dishes.FirstOrDefault(a => a.DishId == dishId);
+      ViewBag.OneDish = DishToUpdate;
+      return View(DishToUpdate);
+    }
+
+    [HttpPost("dishes/update/{dishId}")]
+    public IActionResult UpdateDish(int dishId, Dish updatedDish)
+    {
+      Console.WriteLine("UPDATEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+      if (ModelState.IsValid)
+      {
+        Dish OldDish = _context.Dishes.FirstOrDefault(a => a.DishId == dishId);
+        OldDish.Name = updatedDish.Name;
+        OldDish.Chef = updatedDish.Chef;
+        OldDish.Tastiness = updatedDish.Tastiness;
+        OldDish.Calories = updatedDish.Calories;
+        OldDish.Description = updatedDish.Description;
+        OldDish.UpdatedAt = DateTime.Now;
+        _context.SaveChanges();
+        return RedirectToAction("Index");
+      }
+      else
+      {
+        return View("EditDish", updatedDish);
+      }
+    }
+
+
+
     public IActionResult Privacy()
     {
       return View();

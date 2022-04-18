@@ -14432,6 +14432,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nieme\\Documents\\CodingDojo\\CSharpStack2022\\2.3\\assignment_crudelicious_03\\Views\\Home\\EditDish.cshtml",
+      "TargetPath": "Views\\Home\\EditDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nieme\\Documents\\CodingDojo\\CSharpStack2022\\2.3\\assignment_crudelicious_03\\Views\\Home\\ShowDish.cshtml",
       "TargetPath": "Views\\Home\\ShowDish.cshtml",
       "FileKind": "mvc"
