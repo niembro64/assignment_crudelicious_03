@@ -14,7 +14,6 @@ namespace assignment_crudelicious_03.Models
     public string Name { get; set; }
     [Required]
     public string Chef { get; set; }
-    
     [Required]
     public int Tastiness { get; set; }
     [Required]
@@ -23,7 +22,6 @@ namespace assignment_crudelicious_03.Models
     public String Description { get; set; }
     
     public DateTime CreatedAt { get; set; } = DateTime.Now;
-    
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
   }
 
