@@ -1,0 +1,40 @@
+@{
+  ViewData["Title"] = "Show Dish";
+}
+@model Dish
+
+
+
+<div class="d-flex justify-content-center align-items-center flex-column">
+  <h1>@ViewBag.OneDish.Name</h1>
+  <table class="table table-hover">
+    <tr>
+     <td>Chef</td>
+     <td>@ViewBag.OneDish.Chef</td>
+    </tr>    
+    <tr>
+     <td>Tastiness</td>
+     <td>@ViewBag.OneDish.Tastiness</td>
+    </tr>    
+    <tr>
+     <td>Calories</td>
+     <td>@ViewBag.OneDish.Calories</td>
+    </tr>    
+    <tr>
+     <td>Description</td>
+     <td>@ViewBag.OneDish.Description</td>
+    </tr>    
+    <tr>
+     <td>CreatedAt</td>
+     <td>@ViewBag.OneDish.CreatedAt</td>
+    </tr>    
+    <tr>
+     <td>UpdatedAt</td>
+     <td>@ViewBag.OneDish.UpdatedAt</td>
+    </tr>    
+    <tr>
+     <td>DishId</td>
+     <td>@ViewBag.OneDish.DishId</td>
+    </tr>    
+  </table>
+</div>

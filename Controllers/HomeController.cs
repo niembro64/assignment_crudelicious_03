@@ -34,8 +34,6 @@ namespace assignment_crudelicious_03.Controllers
       Console.WriteLine("ADDING PAGE");
       return View("NewDish");
     }
-
-
     [HttpPost("dishes/add")]
     public IActionResult AddDish(Dish newDish)
     {
@@ -51,6 +49,14 @@ namespace assignment_crudelicious_03.Controllers
       {
         return View("NewDish");
       }
+    }
+
+    [HttpGet("dishes/view/{dishId}")]
+    public IActionResult ShowDish(int dishId)
+    {
+      Console.WriteLine("SHOWING DISH");
+      ViewBag.OneDish = _context.Dishes.FirstOrDefault(a => a.DishId == dishId);
+      return View("ShowDish");
     }
 
 

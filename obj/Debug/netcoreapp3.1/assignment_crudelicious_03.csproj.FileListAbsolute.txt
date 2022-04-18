@@ -59,3 +59,4 @@ C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.3\assignment_crudelicious_
 C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.3\assignment_crudelicious_03\obj\Debug\netcoreapp3.1\assignment_crudelicious_03.pdb
 C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.3\assignment_crudelicious_03\obj\Debug\netcoreapp3.1\assignment_crudelicious_03.genruntimeconfig.cache
 C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.3\assignment_crudelicious_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\NewDish.cshtml.g.cs
+C:\Users\nieme\Documents\CodingDojo\CSharpStack2022\2.3\assignment_crudelicious_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\ShowDish.cshtml.g.cs

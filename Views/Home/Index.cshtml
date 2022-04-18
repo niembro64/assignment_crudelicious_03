@@ -13,10 +13,9 @@
         @foreach (Dish d in ViewBag.AllDishes)
         {
             <tr>
-                <td>@d.Name</td>
+                <td><a href="/dishes/view/@d.DishId">@d.Name</a></td>
                 <td>@d.Chef</td>
             </tr>
         }
     </table>
-
 </div>
